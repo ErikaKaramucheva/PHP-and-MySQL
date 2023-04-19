@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Факултет по математика и информатика- Задача 15</title>
+     <style>
+         body{
+             background-color:burlywood;
+             text-align:center;
+         }
+         ul{
+             list-style:none;
+         }
+     </style>
+</head>
+<body>
+     <a name="menu">
+    <h1>Факултет по математика и информатика</h1>
+    <b><u><h3>Операции</h3></u></b>
+    <ul >
+        <li><a href="allStudent.php">Всички студенти</a></li>
+        <li><a href="allCourse.php">Всички специалности</a></li>
+        <li><a href="addCourse.php">Добавяне на специалност</a></li>
+        <li><a href="editCourse.php">Промяна на специалност</a></li>
+        <li><a href="deleteCourse.php"> Изтриване на специалност</a></li>
+        <li><a href="addStudent.php"> Добавяне на студент</a></li>
+        <li><a href="editStudent.php"> Промяна на студент</a></li>
+        <li><a href="deleteStudent.php"> Изтриване на студент</a></li>
+    </ul>
+    
+    <form  action="sortStudentByGrade.php" method="post">
+       <b><u><h3>Търсене на студенти с отличен среден успех</h3></u></b>
+        <input type="submit" name="submit" value="Търсене" />
+    </form>
+         
+   
+    <form  action="searchByCourseAndForm.php" method="post">
+         <b><u><h3>Търсене на студент по специалност и форма на обучение</h3></u></b>
+        <input type="submit" name="submit1" value="Търсене" />
+    </form>
+
+</a>
+</body>
+</html>

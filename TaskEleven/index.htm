@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Софтуерна фирма "Успех"- Задача 11</title>
+     <style>
+         body{
+             background-color:mediumaquamarine;
+             text-align:center;
+         }
+         ul{
+             list-style:none;
+         }
+     </style>
+</head>
+
+<body>
+    <a name="menu">
+    <h1>Софтуерна фирма "УСПЕХ"</h1>
+    <b><u><h3>Операции</h3></u></b>
+    <ul >
+        <li><a href="selectAll.php">Всички партньори</a></li>
+        <li><a href="balans.php">Баланс на фирмата</a></li>
+        <li><a href="append.php">Допълване с нов запис</a></li>
+        <li><a href="edit.php">Променяне на данни</a></li>
+        <li><a href="delete.php">Изтриване на запис</a></li>
+        <li><a href="sort.php">Сортиране по избрана колона</a></li>
+    </ul>
+    <b><u><h3>Търсене на партньори по избран вид</h3></u></b>
+    <form name="form1" action="vid.php" method="post">
+        <p>
+            <input type="radio" name="vid" value="1" /> Вземане
+        </p>
+        <p>
+            <input type="radio" name="vid" value="2" /> Задължение
+        </p>
+        <input type="submit" name="submit1" value="Потвърдете" />
+    </form>
+    <b><u><h3>Търсене на задължения над зададена сума</h3></u></b>
+    <form name="form2" action="suma.php" method="post">
+        <p>
+            Задайте долна граница на сумата:
+            <input type="number" name="sum" />
+        </p>
+        <input type="submit" name="submit1" value="Търсене по сума" />
+    </form>
+</a>
+</body>
+</html>

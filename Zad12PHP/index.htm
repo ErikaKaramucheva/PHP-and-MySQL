@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Производствена фирма - Задача 12</title>
+     <style>
+         body{
+             background-color:thistle;
+             text-align:center;
+         }
+         ul{
+             list-style:none;
+         }
+     </style>
+</head>
+
+<body>
+    <a name="menu">
+    <h1>Производствена фирма</h1>
+    <b><u><h3>Операции</h3></u></b>
+    <ul >
+        <li><a href="allUser.php">Всички потребители</a></li>
+        <li><a href="addUser.php">Добавяне на потребител</a></li>
+        <li><a href="deleteUser.php">Изтриване на потребител</a></li>
+        <li><a href="addProduct.php">Добавяне на продукт</a></li>
+        <li><a href="deleteProduct.php">Изтриване на продукт</a></li>
+        <li><a href="allProduct.php">Справка за продукт</a></li>
+        <li><a href="totalSum.php">Крайна печалба</a></li>
+        <li><a href="totalProducts.php">Общ брой продукти</a></li>
+    </ul>
+    <b><u><h3>Търсене на потребители по избран вид</h3></u></b>
+    <form name="form1" action="sortUser.php" method="post">
+        <p>
+            <input type="radio" name="vid" value="1" /> Дистрибутор
+        </p>
+        <p>
+            <input type="radio" name="vid" value="2" /> Клиент
+        </p>
+        <input type="submit" name="submit" value="Потвърдете" />
+    </form>
+         <b><u><h3>Крайна печалба на фирмата</h3></u></b>
+    <form name="form2" action="totalSum.php" method="post">
+        <input type="submit" name="submit1" value="Търсене" />
+    </form>
+    <b><u><h3>Общ брой продукти</h3></u></b>
+    <form name="form2" action="totalProducts.php" method="post">
+        <input type="submit" name="submit1" value="Търсене" />
+    </form>
+
+</a>
+</body>
+</html>

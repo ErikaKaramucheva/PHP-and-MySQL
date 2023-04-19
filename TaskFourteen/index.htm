@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Управление на магазин- Задача 14</title>
+     <style>
+         body{
+             background-color:cornflowerblue;
+             text-align:center;
+             color:mediumvioletred;
+         }
+         ul{
+             list-style:none;
+         }
+         </style>
+</head>
+<body>
+     <a name="menu">
+    <h1>Управление на онлайн магазин</h1>
+    <b><u><h3>Възможни операции</h3></u></b>
+    <ul >
+        <li><a href="all.php">Всички продукти</a></li>
+        <li><a href="addGoods.php">Добавяне на продукт</a></li>
+        <li><a href="edit.php">Промяна на продукт</a></li>
+        <li><a href="delete.php">Изтриване на продукт</a></li>
+        <li><a href="sort.php">Сортиране по избрана колона</a></li>
+    </ul>
+    <b><u><h3>Търсене на продукти</h3></u></b>
+    <form name="form1" action="search.php" method="post">
+        <p>
+            <input type="radio" name="search" value="1" /> Продукти с критична наличност
+        </p>
+        <p>
+            <input type="radio" name="search" value="2" /> Продукти с минимална цена:
+            <br />
+            <input type="number" name="price" />
+        </p>
+        <input type="submit" name="submit1" value="Потвърдете" />
+    </form>
+</a>
+</body>
+</html>
