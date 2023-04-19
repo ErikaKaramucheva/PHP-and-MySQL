@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Избор на курсове- задача 10</title>
+    <style>
+        body{
+            background-color:coral;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Избор на курсове</h1>
+    <form method="post" action="index.php">
+    <p>Задайте име на клиента: 
+    <input type="text" name="name" /></p>
+    <p>
+        Изберете форма на курса:
+        <select name="form">
+            <option value="red">Редовно обучение</option>
+            <option value="zad">Задочно обучение</option>
+            <option value="dis">Дистанционно обучение</option>
+        </select>
+    </p>
+    <p>
+        Изберете един или повече курсове (с Ctrl/опция):
+        <select name="courses[]" multiple>
+            <option value="php">PHP=> 200 лева</option>
+            <option value="html">HTML=> 100 лева</option>
+            <option value="js">JavaScript=> 150 лева</option>
+            <option value="java">Java=> 250 лева</option>
+            <option value="c#">C#=> 250 лева</option>
+            <option value="css">CSS=> 100 лева</option>
+        </select>
+    </p>
+        <input type="submit" name="submit" value="Потвърдете" />
+        </form>
+</body>
+</html>

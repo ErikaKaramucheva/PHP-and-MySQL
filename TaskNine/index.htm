@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Изчисляване на заплата- Задача 9</title>
+    <style>
+        body{
+            background-color:thistle;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <form action="index.php" method="post">
+        <p>
+            Задайте името на служителя:
+            <input type="text" name="name" />
+        </p>
+        
+        <p>
+            Изберете категория:
+         </p>
+        <p>
+            <input type="radio" name="catRadio" value="manager" /> Ръководител: 1000 лева
+        </p>
+        <p>
+            <input type="radio" name="catRadio" value="associate" /> Сътрудник: 600 лева
+        </p>
+        <p>
+            <input type="radio" name="catRadio" value="specialist" /> Специалист: 800 лева
+        </p>
+        <p>
+            <input type="radio" name="catRadio" value="other" /> Други: 500 лева
+        </p>
+
+        <p>
+            Изберете стаж в навършени години:
+        </p>
+        <p>
+            <input type="radio" name="sRadio" value="first" /> 0-5 години (надбавка 4%)
+        </p>
+        <p>
+            <input type="radio" name="sRadio" value="second" /> 6-12 години (надбавка 7%)
+        </p>
+        <p>
+            <input type="radio" name="sRadio" value="third" /> 13-22 години (надбавка 11%)
+        </p>
+        <p>
+            <input type="radio" name="sRadio" value="fourth" /> Над 22 години (надбавка 16%)
+        </p>
+        <input type="submit" name="submit" value="Потвърдете" />
+    </form>
+</body>
+</html>

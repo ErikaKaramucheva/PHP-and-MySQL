@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Продажба на софтуерни продукти- Задача 6</title>
+    <style>
+        body{
+            background-color:palevioletred;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Продажба на софтуерни продукти</h1>
+    <h2 style="color:darkblue">При закупуване на повече от един продукт се прави 10% отстъпка от общата сума!</h2>
+    <br />
+    <form action="index.php" method="get">
+    <p>
+        Задайте име на клиента: 
+        <input type="text" name="custName" />
+    </p>
+    <p>
+        Изберете софтуерни продукти:
+        <br />
+        <input type="checkbox" name="product[]" value="sklad" />Склад 100 лева
+        <br />
+        <input type="checkbox" name="product[]" value="schetovodstvo"/>Счетоводство 200 лева
+        <br />
+        <input type="checkbox" name="product[]" value="plasment" />Пласмент 250 лева
+        <br />
+        <input type="submit" name="submit" value="Потвърдете" />
+    </p>
+
+        </form>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Амортизация- Задача 4</title>
+    <style>
+        body{
+            background-color:wheat;
+            text-align:center;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border-color: black;
+            border-block: medium;
+            border-block-width: thick;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Амортизация
+    </h1>
+    <form action="index.php" method="post">
+        <p>
+            Задайте името на основното средство:
+            <input type="text" name="name" />
+        </p>
+        <p>
+            Задайте стойността при закупуване:
+            <input type="number" name="price" />
+        </p>
+        <p>
+            Задайте година на закупуване:
+            <input type="datetime" name="date" />
+        </p>
+        <p>
+            Задайте % за амортизация:
+            <input type="number" name="percent" />
+        </p>
+        <input type="submit" name="submit" value="Потвърдете" />
+    </form>
+</body>
+</html>
